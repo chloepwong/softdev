@@ -23,7 +23,8 @@ krewes = {
          }
 
 def pickDevo(devos):
-	# Make a list of the period numbers and randomly select one. Then, randomly select a name from that period's values.
+	# Turn devos into a list. It will contain two other lists, each representing a different period.
+	# Randomly select one of the two periods. Then, randomly select a name within that period's list.
     	print(random.choice(random.choice(list(devos.values()))))
           
 pickDevo(krewes)
