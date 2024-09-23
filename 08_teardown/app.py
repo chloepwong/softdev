@@ -19,9 +19,7 @@ QCC:
  ...
 
 INVESTIGATIVE APPROACH:
-<Your concise summary of how
- you and your team set about
- "illuminating the cave of ignorance" here...>
+We edited small parts of the code at a time to see how each change would affect the outcome.
 '''
 
 
