@@ -3,19 +3,19 @@
 # SoftDev
 # K08
 # 2024-09-20
-# time spent:
+# time spent: 0.5 hr
 
 '''
 DISCO:
-<note any discoveries you made here... no matter how small!>
+When the code is run, a link leading to a page that staets "No hablo queso!" is provided.
 
 QCC:
-0. 
-1. 
-2. 
-3. 
-4. 
-5. 
+0. This is similar to object creation in a class in Java.
+1. / refers to the root.
+2. It prints to a local file.
+3. It prints "No hablo queso!"
+4. It appears on the website that is generated when the code is run. I can open the link that is provided.
+5. This is similar to putting text into a website in HTML.
  ...
 
 INVESTIGATIVE APPROACH:
