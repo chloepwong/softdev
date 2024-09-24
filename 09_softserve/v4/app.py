@@ -2,6 +2,9 @@
 # SoftDev
 # September 2024
 
+# app.debug = True and app.run() are now in a conditional
+# I expect this to have the same behavior as the previous code given the file is not imported
+
 from flask import Flask
 app = Flask(__name__)           #create instance of class Flask
 
