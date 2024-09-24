@@ -10,9 +10,9 @@ import random
 occupations = []  
 
 def createList():
-    with open("06_py-csv/occupations.csv", "r") as file:
+    with open("occupations.csv", "r") as file:
         data = file.read().split("\n")
-        for job in data:
+        for job in data[:-1]:
             percent= job.split(",")
             occupations.append({"job": percent[0]})
 
@@ -21,7 +21,7 @@ def pickJob():
     if len(occupations) == 0:
         print("The list is empty!")
         return
-    l = int(len(occupations)//2 - 1)
+    l = int(len(occupations) - 1)
     choice = random.randint(0, l)
     job= occupations[choice]
     print(job)
