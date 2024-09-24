@@ -13,7 +13,7 @@ QCC:
 0. This is similar to object creation in a class in Java.
 1. / refers to the root directory.
 2. It prints to a local file.
-3. It displays "No hablo queso!" in the website and prints __main__ in the terminal.
+3. It displays "No hablo queso!" in the website and prints __main__ in the console.
 4. It appears on the website that is generated when the code is run. I can open the link that is provided.
 5. This is similar to putting text into a website in HTML.
  ...
