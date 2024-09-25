@@ -2,7 +2,7 @@
 # SoftDev
 # September 2024
 
-from flask import Flask
+from flask import Flask, jsonify
 import random
 import csv
 
@@ -26,8 +26,10 @@ def numbercruncher():
         job.append(dict1.get("Job Class"))
     job.pop()
     percentage.pop()
-    return job
-    return(random.choices(job, weights=percentage))
+    return jsonify({
+        "team": "Jackie Zeng, Chloe Wong",
+        "selected occupation": random.choices(job, weights=percentage),
+        "occupations list": job})
 
 
 if __name__ == "__main__":      # true if this file NOT imported
