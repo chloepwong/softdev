@@ -5,13 +5,19 @@
 """
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q0:
-<your response here>
+render_template is used in test_templt. 
+I expect there to be an error message when accessing 
+http://127.0.0.1:5000/my_foist_template 
+but not http://127.0.0.1:5000/my_foist_template.
 
 Q1:
-<your response here>
+"/my_foist_template" is in @app.route().
+We predict the page can be loaded on http://127.0.0.1:5000/my_foist_template,
 
 Q2:
-<your response here>
+The first argument gives 'model_tmplt.html' as the template file.
+The second argument sets "fooooo" as the variable foo.
+The third arguments sets coll as the variable collection.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 """
 
