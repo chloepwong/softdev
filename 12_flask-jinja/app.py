@@ -13,7 +13,7 @@ These predictions were correct.
 
 Q1:
 "/my_foist_template" is in @app.route().
-We predict the page can be loaded on http://127.0.0.1:5000/my_foist_template,
+We predict the page can be loaded on http://127.0.0.1:5000/my_foist_template.
 This was correct.
 
 Q2:
