@@ -15,12 +15,12 @@ app = Flask(__name__)
 def randomjob():
     with open('data/occupations.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
-    rows = list (reader)
-    columns = rows[0]
+        rows = list(reader)
+    columns = list(rows[0].keys())
     jobs = {columns[0] : [], headers[1] : []}
-    for row in rows[1:len(rows)-1]:
+    for row in rows[1:-1]:
         jobs[columns[0]].append(row[0])
-        jobs[columns[1]].append(row[1])
+        jobs[columns[1]].append(float(row[1]))
     rand_job = random.choices(jobs[columns[0]], weights=jobs[columns[1]], k=1)[0]
     return render_template('tablified.html', job_info = jobs)
 
