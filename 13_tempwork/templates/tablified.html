@@ -7,13 +7,13 @@
     <th>Job Class</th>
     <th>Percentage</th>
   </tr>
-  {% for i in range(job_info[columns[0]]|length) %}
+  {% for i in range(job_info[categories[0]]|length) %}
     <tr>
       <td>
-        {{ job_info[0][i] }}
+        {{ job_info[categories[0]][i] }}
       </td>
       <td>
-        {{ job_info[1][i] }}
+        {{ job_info[categories[1]][i] }}
       </td>
     </tr>
   {% endfor %}
