@@ -7,6 +7,16 @@
     <th>Job Class</th>
     <th>Percentage</th>
   </tr>
+  {% for i in range(len(job_info[0])) %}
+    <tr>
+      <td>
+        {{ job_info[0][i] }}
+      </td>
+      <td>
+        {{ job_info[1][i] }}
+      </td>
+    </tr>
+  {% endfor %}
 </table> 
   
 </html>
