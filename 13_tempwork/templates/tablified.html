@@ -7,7 +7,7 @@
     <th>Job Class</th>
     <th>Percentage</th>
   </tr>
-  {% for i in range(len(job_info[0])) %}
+  {% for i in range(job_info[0]|length) %}
     <tr>
       <td>
         {{ job_info[0][i] }}
