@@ -22,7 +22,7 @@ def randomjob():
         jobs[columns[0]].append(row[0])
         jobs[columns[1]].append(row[1])
     rand_job = random.choices(jobs[columns[0]], weights=jobs[columns[1]], k=1)[0]
-    return render_template('tablified.html', occupations = jobs)
+    return render_template('tablified.html', job_info = jobs)
 
 
 if __name__ == "__main__":
