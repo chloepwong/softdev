@@ -5,35 +5,26 @@
 # 2024-9-30
 # Time Spent
 
-from flask import Flask, jsonify
+from flask import Flask, render_template
 import random
 import csv
 
-app = Flask(__name__)           #create instance of class Flask
+app = Flask(__name__)
 
-@app.route("/wdywtbwygp")                 #assign fxn to route
-def numbercruncher():
-    list1=[]
-    percentage=[]
-    job=[]
-    print("the __name__ of this module is... ")
-    print(__name__)
-    with open('occupations.csv', newline='') as csvfile:
+@app.route("/wdywtbwygp")
+def randomjob():
+    with open('data/occupations.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
-        for row in reader:
-            list1.append(row)
-    for dict1 in list1:
-        percentage.append(float(dict1.get("Percentage")))
-    for dict1 in list1:
-        job.append(dict1.get("Job Class"))
-    job.pop()
-    percentage.pop()
-    return jsonify({
-        "team": "Jackie Zeng, Chloe Wong",
-        "selected occupation": random.choices(job, weights=percentage),
-        "occupations list": job})
+    rows = list (reader)
+    columns = rows[0]
+    jobs = {columns[0] : [], headers[1] : []}
+    for row in rows[1:len(rows)-1]:
+        jobs[columns[0]].append(row[0])
+        jobs[columns[1]].append(row[1])
+    rand_job = random.choices(jobs[columns[0]], weights=jobs[columns[1]], k=1)[0]
+    return render_template('tablified.html', occupations = jobs)
 
 
-if __name__ == "__main__":      # true if this file NOT imported
-    app.debug = True            # enable auto-reload upon code change
+if __name__ == "__main__":
+    app.debug = True
     app.run()
