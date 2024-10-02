@@ -21,6 +21,7 @@ Time Spent: 2 hr
   <tr>
     <th>Job Class</th>
     <th>Percentage</th>
+    <th>Get Started</th>
   </tr>
   {% for i in range(job_info[categories[0]]|length) %}
     <tr>
@@ -31,7 +32,7 @@ Time Spent: 2 hr
         {{ job_info[categories[1]][i] }}
       </td>
       <td>
-        {{ job_info[categories[2]][i] }}
+        <a href="{{ job_info[categories[2]][i] }}"> Link </a>
       </td>
     </tr>
   {% endfor %}
