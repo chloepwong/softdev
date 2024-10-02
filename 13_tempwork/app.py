@@ -17,10 +17,11 @@ def randomjob():
         reader = csv.DictReader(csvfile)
         rows = list(reader)
     columns = list(rows[0].keys())
-    jobs = {columns[0]: [], columns[1]: []}
+    jobs = {columns[0]: [], columns[1]: [], columns[2]: []}
     for row in rows[1:-1]:
         jobs[columns[0]].append(row[columns[0]])
         jobs[columns[1]].append(float(row[columns[1]]))
+        jobs[columns[2]].append(float(row[columns[2]]))
     rand_job = random.choices(jobs[columns[0]], weights=jobs[columns[1]], k=1)[0]
     return render_template('tablified.html', job_info = jobs, categories = columns, job = rand_job)
 
