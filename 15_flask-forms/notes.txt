@@ -3,7 +3,7 @@
 # SoftDev
 # K15 - More flask forms!
 # 2024-10-8
-# Time Spent: 
+# Time Spent: 0.5
 
 DISCO:
 * Request.args gives the response from GET request
