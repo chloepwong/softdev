@@ -6,21 +6,7 @@
 # Time Spent: 
 
 DISCO:
-* 
-* 
-* 
------------------------------------------------------------------------
-
-
-Q/C/C:
-* 
-* 
-* 
------------------------------------------------------------------------
-
-
-OTHER?
-* 
-* 
-* 
+* Request.args gives the response from GET request
+* Request.method gives the request method used
+* The default request method is GET in both HTML and Flask
 -----------------------------------------------------------------------
