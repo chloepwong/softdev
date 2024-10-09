@@ -3,7 +3,7 @@ Team Unknown
 SoftDev
 K14 -- flask forms
 2024-10-7
-Time Spent:
+Time Spent: 0.5
 
 DISCO:
 * Uncommenting methods=['GET', 'POST']) gives a SyntaxError because it is missing an open parenthesis
