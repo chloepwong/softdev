@@ -5,42 +5,13 @@
 # 2024-10-9
 # Time Spent:
 
-# import conventions:
-# list most general first (standard python library)
-# ...then pip installs (eg Flask)
-# ...then your own home-rolled modules/packages (today's test module)
+import os
 
-from flask import Flask             #facilitate flask webserving
-from flask import render_template   #facilitate jinja templating
-from flask import request           #facilitate form submission
-
-import testmod0
-
-#the conventional way:
-#from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 
 app = Flask(__name__)    #create Flask object
 
-
-'''
-trioTASK:
-~~~~~~~~~~~ BEFORE RUNNING THIS, ~~~~~~~~~~~~~~~~~~
-...read for understanding all of the code below.
- * Some will work as written;
- *  ...other sections will not. 
-
-TASK:
- Predict which.
- 1. Devise simple tests to isolate components/behaviors.
- 2. Execute your tests.
- 3. Process results.
- 4. Findings yield new ideas for more tests? Yes: do them.
-
-PROTIP: Insert your own in-line comments
- wherever they will help
-  your future self and/or current teammates
-   understand what is going on.
-'''
+app.secret_key = os.urandom(32)
 
 @app.route("/") #, methods=['GET', 'POST'])
 def disp_loginpage():
@@ -51,10 +22,7 @@ def disp_loginpage():
     #print(request)
     #print("***DIAG: request.args ***")
     #print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
-    #print("***DIAG: request.headers ***")
-    #print(request.headers)
+    session['username'] = request.args
     return render_template( 'login.html' )
 
 
@@ -67,12 +35,22 @@ def authenticate():
     #print(request)
     #print("***DIAG: request.args ***")
     #print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
-    #print("***DIAG: request.headers ***")
-    #print(request.headers)
-    return "Waaaa hooo HAAAH"  #response to a form submission
+    if request.cookies.get('username') == request.args:
+        return render_template( 'response.html', response=request.args['username'], method=request.method )
+    else:
+        return render_template( 'login.html' )
 
+@app.route("/logout") # , methods=['GET', 'POST'])
+def logout():
+    #print("\n\n\n")
+    #print("***DIAG: this Flask obj ***")
+    #print(app)
+    #print("***DIAG: request obj ***")
+    #print(request)
+    #print("***DIAG: request.args ***")
+    #print(request.args)
+    session.pop('username')
+    return render_template( 'logout.html' )
 
     
 if __name__ == "__main__": #false if this file imported as module
