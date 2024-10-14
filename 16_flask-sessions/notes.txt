@@ -3,8 +3,11 @@
 # SoftDev
 # K16 - user sessions
 # 2024-10-9
-# Time Spent: 
+# Time Spent: 1 hr
 
 DISCO:
-* 
+* The user's username is stored using cookies
+* The secret key allows data to be specific to users
+* The session is maintained for as long as the username is stored
+* The username is removed when the user logs out
 -----------------------------------------------------------------------
