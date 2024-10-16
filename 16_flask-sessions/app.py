@@ -1,7 +1,7 @@
 # Chloe Wong, Tiffany Yang, Claire Song
 # Team X
 # SoftDev
-# K15 -- user sessions
+# K16 -- user sessions
 # 2024-10-9
 # Time Spent: 1 hr
 
