@@ -22,7 +22,7 @@ def home():
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
-    session['username'] = request.form['username']
+    session['username'] = request.args.get('username')
     return redirect(url_for('home'))
 
 @app.route("/logout", methods=['GET', 'POST'])
