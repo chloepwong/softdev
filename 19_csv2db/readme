@@ -9,15 +9,14 @@ Time Spent: 1 hr
 
 DISCOVERIES:
 ----------------------------------------------------
-* a thing
-* another thing
-* ...and more
+* use INSERT INTO to add data to tables
+* use SELECT to collect data from tables
+* use CREATE to set up a table
+* use DROP to delete a table
 ====================================================
 
 
 QUESTIONS/COMMENTS/CONCERNS:
 ----------------------------------------------------
-Q: a question
-Q: another question
-C: a comment or concern
+Q: how much can tables be changed after being set up?
 ====================================================
