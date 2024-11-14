@@ -12,13 +12,57 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
 </head>
+<style>
+    h1 {
+        text-align: center;
+    }
+    .stats-list {
+      list-style-type: none;
+      clear: left;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .stats-list .stats-list-positive {
+      color: #3adb76;
+    }
+
+    .stats-list .stats-list-negative {
+      color: #cc4b37;
+    }
+
+    .stats-list > li {
+      display: inline-block;
+      margin-right: 10px;
+      padding-right: 10px;
+      border-right: 1px solid #cacaca;
+      text-align: center;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    .stats-list > li:last-child {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .stats-list > li .stats-list-label {
+      display: block;
+      margin-top: 2px;
+      font-size: 0.9em;
+      font-weight: normal;
+    }
+</style>
 <body>
     <nav class="top-bar topbar-responsive">
       <div class="top-bar-title">
         <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
           <button class="menu-icon" type="button" data-toggle></button>
         </span>
-        <a class="topbar-responsive-logo" href="#"><strong>Site Title</strong></a>
+        <a class="topbar-responsive-logo" href="#"><strong>Foundation</strong></a>
       </div>
       <div id="topbar-responsive" class="topbar-responsive-links">
         <div class="top-bar-right">
@@ -31,5 +75,17 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav><br>
+    <h1>Features of Foundations</h1><br>
+    <ul class="stats-list">
+      <li>
+        135 <span class="stats-list-label">Commits</span>
+      </li>
+      <li class="stats-list-positive">
+        17,678 <span class="stats-list-label">Additions</span>
+      </li>
+      <li class="stats-list-negative">
+        2,390 <span class="stats-list-label">Deletions</span>
+      </li>
+    </ul>
 </body>
