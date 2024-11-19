@@ -4,3 +4,13 @@ SoftDev
 K22 - Testing other on-ramps
 2024-11-19
 Time Spent: 
+
+DISCO:
+
+Q/C/C:
+
+q0:
+
+q0b:
+
+q1:
