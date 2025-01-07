@@ -1,0 +1,8 @@
+DISCO:
+- Stack overflow occurs when the function has called itself too many times and the program runs out of memory
+- console.log() can be used to print to the console
+- <script> can be used to retrieve and run JavaScript
+
+QCC:
+- Why is "undefined" printed in the console when you set a variable (e.g., let x = 5)?
+- Are there any differences between let and var?
