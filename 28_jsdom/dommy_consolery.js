@@ -110,7 +110,6 @@ console.log(gcd(6, 9))
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
 //  Note anything notable.
-
 const myFxn = (param1, param2) => { //doesn't require "function"
     var retVal = param1 + param2;
     return retVal;
