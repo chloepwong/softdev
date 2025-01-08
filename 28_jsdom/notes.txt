@@ -1,0 +1,6 @@
+DISCO:
+- Arrow function syntax does not require "function" before parameters
+- Semicolons are written after function definitions
+
+QCC:
+- How can error handling be implemented into the functions?
