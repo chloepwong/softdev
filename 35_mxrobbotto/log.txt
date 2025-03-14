@@ -1,0 +1,19 @@
+Chloe Wong, Brian Liu
+Team 31
+SoftDev
+K35 -- p00 by GitHub Copilot
+2024-03-17
+Time Spent:
+
+DISCO:
+- There is a creepy face in the Copilot interface
+- Copilot prefers to use SQLAlchemy over SQLite3
+- Copilot did not write all the files in its directory structure, and it wrote files not included in the structure
+
+Q/C/C:
+some areas of interest...
+q0: How many tries did it take to "get it right?"
+q1: Did you catch any errors? If so, how did you notice, and what did you do?
+q2: How similar or different is the bot's output to that of your past self / old team?
+C: Copilot crashed and closed itself
+C: Copilot slows down as it writes more files
