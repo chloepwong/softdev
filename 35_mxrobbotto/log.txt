@@ -15,6 +15,6 @@ Q/C/C:
 some areas of interest...
 q0: It took us two tries to "get it right."
 q1: We noticed Copilot trying to use SQLAlchemy, so we kindly asked it to use SQLite3 instead. When we saw that our first attempt resulted in a failing app, we decided to start over with new prompts.
-q2: The bot's output includes database related code in the main app.py file. It also hashes user passwords, which we did not ask it to do.
+q2: The bot's output includes database related code in the main __init__.py file. It also hashes user passwords, which we did not ask it to do.
 C: Copilot crashed and closed itself
 C: Copilot slows down as it writes more files
