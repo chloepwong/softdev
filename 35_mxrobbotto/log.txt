@@ -3,17 +3,18 @@ Team 31
 SoftDev
 K35 -- p00 by GitHub Copilot
 2024-03-17
-Time Spent:
+Time Spent: 1.5 hours
 
 DISCO:
 - There is a creepy face in the Copilot interface
 - Copilot prefers to use SQLAlchemy over SQLite3
 - Copilot did not write all the files in its directory structure, and it wrote files not included in the structure
+- Copilot tells you where it got its code from and 
 
 Q/C/C:
 some areas of interest...
-q0: How many tries did it take to "get it right?"
-q1: Did you catch any errors? If so, how did you notice, and what did you do?
-q2: How similar or different is the bot's output to that of your past self / old team?
+q0: It took us two tries to "get it right."
+q1: We noticed Copilot trying to use SQLAlchemy, so we kindly asked it to use SQLite3 instead. When we saw that our first attempt resulted in a failing app, we decided to start over with new prompts.
+q2: The bot's output includes database related code in the main app.py file. It also hashes user passwords, which we did not ask it to do.
 C: Copilot crashed and closed itself
 C: Copilot slows down as it writes more files
