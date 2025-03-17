@@ -1,4 +1,4 @@
-Chloe Wong, Brian Liu
+Chloe Wong and Brian Liu
 Team 31
 SoftDev
 K35 -- p00 by GitHub Copilot
@@ -9,12 +9,11 @@ DISCO:
 - There is a creepy face in the Copilot interface
 - Copilot prefers to use SQLAlchemy over SQLite3
 - Copilot did not write all the files in its directory structure, and it wrote files not included in the structure
-- Copilot tells you where it got its code from and 
+- Copilot tells you where it got its code from and issues that it may have
 
 Q/C/C:
-some areas of interest...
 q0: It took us two tries to "get it right."
-q1: We noticed Copilot trying to use SQLAlchemy, so we kindly asked it to use SQLite3 instead. When we saw that our first attempt resulted in a failing app, we decided to start over with new prompts.
-q2: The bot's output includes database related code in the main __init__.py file. It also hashes user passwords, which we did not ask it to do.
-C: Copilot crashed and closed itself
-C: Copilot slows down as it writes more files
+q1: We noticed Copilot trying to use SQLAlchemy, so we kindly asked it to use SQLite3 instead. When we saw that our first attempt resulted in a nonfunctioning app, we decided to start over with new prompts.
+q2: The bot's output incorporates all database related code into the main __init__.py file, whereas we defined useful database functions in a separate file. The bot's output also hashes user passwords, which we did not ask it to do.
+C: Copilot crashed and closed itself.
+C: Copilot slows down as it writes more files.
